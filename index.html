@@ -5,37 +5,33 @@
 
   var config = {
     categories: [
-      { name: "Google", commands: [
-        { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
-        { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
-        { key: 'k', name: 'Keep', url: 'https://keep.google.com', search: '/#search/text=' },
-        { key: 'nt', name: 'Netflix', url: 'https://www.netflix.com', search: '/search?q=' },
-        { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
-      ] },
-      { name: "Devel", commands: [
-        { key: 'b', name: 'Bitbucket', url: 'https://bitbucket.com', search: '/search?q=' },
+      { name: "Core", commands: [
+        { key: 'p', name: 'ProtonMail', url: 'https://mail.protonmail.com', search: '#' },
+        { key: 's', name: 'Shaarli', url: 'https://links.alejandroandr.eu', search: '/?searchterm=' },
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
       ] },
       { name: "News", commands: [
-        { key: 'r', name: 'Reddit', url: 'http://www.reddit.com', search: '/search?q=' },
-        { key: 'hn', name: 'Hacker News', url: 'https://news.ycombinator.com/', search: '/?q=' },
-        { key: 'j', name: 'HN Jobs', url: 'https://news.ycombinator.com/jobs', search: '/?q=' },
-        { key: 'n', name: 'NYTimes', url: 'http://www.nytimes.com', search: '/search/sitesearch/#/' },
-        { key: 't', name: 'O Tempo', url: 'http://otempo.com.br', search: '/busca-7.10677?q=' },
+        { key: 'pu', name: 'Público', url: 'http://www.publico.es', search: '#' },
+        { key: 'e', name: 'eldiario.es', url: 'https://www.eldiario.es', search: '#' },
+        { key: 'mn', name: 'Menéame', url: 'https://www.meneame.net', search: '/search?q=' },
+        { key: 'hn', name: 'Hacker News', url: 'https://news.ycombinator.com', search: '#' },
       ] },
-      { name: "Media/Tools", commands: [
-        { key: 's', name: 'Spotify', url: 'https://spotify.com', search: '/search?q=' },
+      { name: "Lurk", commands: [
+        { key: 'r', name: 'Reddit', url: 'http://www.reddit.com', search: '/search?q=' },
+        { key: 'gs', name: 'GreySec', url: 'https://greysec.net', search: '/search?q=' },
+        { key: 'd', name: 'Debian', url: 'http://forums.debian.net', search: '/search.php?keywords=' },
+        { key: 'f', name: 'FreeBSD', url: 'https://forums.freebsd.org', search: '/search/?q=' },
         { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
       ] },
-      { name: "Education", commands: [
-        { key: 'hr', name: 'Hacker Rank', url: 'http://hackerrank.com', search: '/' },
-        { key: 'ka', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
-        { key: 'w', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
+      { name: "Media", commands: [
+        { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
+        { key: 'mx', name: 'Mixcloud', url: 'https://www.mixcloud.com', search: '#' },
+        { key: 'il', name: 'InfiniteLooper', url: 'http://www.infinitelooper.com', search: '/?v=' },
       ] },
     ],
 
     // if none of the keys are matched, this is used for searching.
-    defaultSearch: 'https://www.google.com/search?q=',
+    defaultSearch: 'https://www.duckduckgo.com/?q=',
 
     // the delimiter between the key and your search query.
     // e.g. to search GitHub for potatoes you'd type "g:potatoes".
